@@ -544,6 +544,51 @@ img {
   color: var(--color-muted);
 }
 
+.seasonal-offer {
+  margin-top: 1.2rem;
+  max-width: 760px;
+  padding: 1rem 1.1rem;
+  border-radius: 14px;
+  border: 1px solid rgba(232, 163, 58, 0.4);
+  background: linear-gradient(120deg, #fff8ea 0%, #fdf3df 100%);
+  box-shadow: 0 10px 20px rgba(232, 163, 58, 0.16);
+}
+
+.seasonal-offer-title {
+  margin: 0;
+  font-family: "Playfair Display", serif;
+  font-size: clamp(1.15rem, 2.1vw, 1.45rem);
+  color: #7f5112;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.seasonal-offer-title span {
+  display: inline-block;
+  margin-left: 0.25rem;
+  color: #b66f12;
+  font-weight: 700;
+}
+
+.seasonal-offer p {
+  margin: 0.35rem 0 0;
+  color: #5e4b2d;
+}
+
+.room-offer {
+  display: inline-flex;
+  align-self: flex-start;
+  margin-top: -0.1rem;
+  padding: 0.22rem 0.58rem;
+  border-radius: 999px;
+  border: 1px solid rgba(232, 163, 58, 0.4);
+  background: rgba(232, 163, 58, 0.18);
+  color: #7f5112;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
 .slider {
   position: relative;
   border-radius: var(--radius);
@@ -771,6 +816,14 @@ tbody tr:hover {
   .slider-controls button {
     width: 44px;
     height: 44px;
+  }
+
+  .seasonal-offer {
+    padding: 0.85rem 0.9rem;
+  }
+
+  .seasonal-offer-title {
+    line-height: 1.2;
   }
 }
 
