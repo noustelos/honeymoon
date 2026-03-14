@@ -419,6 +419,37 @@ function initLangSwitcher() {
   });
 }
 
+function initContactEmailForm() {
+  const form = document.querySelector("[data-contact-email-form]");
+  if (!form) return;
+
+  const footerEmailLink = document.querySelector(".footer a[href^='mailto:']");
+  const footerEmailHref = footerEmailLink?.getAttribute("href") || "mailto:h-beach@otenet.gr";
+  const targetEmail = footerEmailHref.replace(/^mailto:/, "");
+
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    const formData = new FormData(form);
+    const name = String(formData.get("name") || "").trim();
+    const email = String(formData.get("email") || "").trim();
+    const subjectInput = String(formData.get("subject") || "").trim();
+    const message = String(formData.get("message") || "").trim();
+
+    const defaultSubject = isGreekDocument ? "Νέο μήνυμα από την ιστοσελίδα" : "New message from website";
+    const subject = subjectInput || defaultSubject;
+
+    const bodyLabelName = isGreekDocument ? "Ονοματεπώνυμο" : "Full Name";
+    const bodyLabelEmail = isGreekDocument ? "Email" : "Email";
+    const bodyLabelMessage = isGreekDocument ? "Μήνυμα" : "Message";
+
+    const body = `${bodyLabelName}: ${name}\n${bodyLabelEmail}: ${email}\n\n${bodyLabelMessage}:\n${message}`;
+    const mailtoUrl = `mailto:${targetEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+    window.location.href = mailtoUrl;
+  });
+}
+
 function init() {
   initMobileNav();
   initReveal();
@@ -428,6 +459,7 @@ function init() {
   applyTranslations();
   initRoomTemplatePage();
   initBookingAndCallCtas();
+  initContactEmailForm();
   initYear();
 }
 
