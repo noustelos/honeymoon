@@ -450,8 +450,35 @@ function initContactEmailForm() {
   });
 }
 
+function initActiveNavLink() {
+  const navLinks = document.querySelectorAll(".nav-links a:not(.btn), .mobile-menu a:not(.btn)");
+  if (!navLinks.length) return;
+
+  const currentPath = window.location.pathname;
+  const currentParts = currentPath.split("/").filter(Boolean);
+  const currentFile = (currentParts[currentParts.length - 1] || "index.html").toLowerCase();
+
+  navLinks.forEach((link) => {
+    const href = link.getAttribute("href") || "";
+    if (!href || href.startsWith("#") || /^(https?:|mailto:|tel:)/i.test(href)) return;
+
+    const targetUrl = new URL(href, window.location.href);
+    const targetParts = targetUrl.pathname.split("/").filter(Boolean);
+    const targetFile = (targetParts[targetParts.length - 1] || "index.html").toLowerCase();
+    const isCurrent = targetFile === currentFile;
+
+    link.classList.toggle("is-current", isCurrent);
+    if (isCurrent) {
+      link.setAttribute("aria-current", "page");
+    } else {
+      link.removeAttribute("aria-current");
+    }
+  });
+}
+
 function init() {
   initMobileNav();
+  initActiveNavLink();
   initReveal();
   initHeroSlideshow();
   initLangSwitcher();
