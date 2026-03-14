@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-label="Image placeholder">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2E5FA7" />
+      <stop offset="100%" stop-color="#1C3F6E" />
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#bg)" />
+  <circle cx="1280" cy="170" r="120" fill="rgba(255,255,255,0.2)" />
+  <path d="M0 760 C 260 680 420 870 700 790 C 950 705 1190 880 1600 760 L1600 1000 L0 1000 Z" fill="rgba(255,255,255,0.25)" />
+  <text x="86" y="880" fill="#FFFFFF" font-size="58" font-family="Inter, Arial, sans-serif" font-weight="700">Honeymoon Beach Studios</text>
+  <text x="86" y="940" fill="#FFFFFF" font-size="30" font-family="Inter, Arial, sans-serif">Photo Placeholder</text>
+</svg>

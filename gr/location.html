@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="el">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Τοποθεσία | Honeymoon Beach Studios</title>
+    <meta
+      name="description"
+      content="Το Honeymoon Beach Studios βρίσκεται στον Περίβολο Σαντορίνης, λίγα λεπτά από την παραλία."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-shell">
+        <a class="brand" href="index.html"><span>Honeymoon Beach Studios</span></a>
+        <nav class="nav-links">
+          <a href="index.html">Αρχική</a>
+          <a href="rooms.html">Δωμάτια</a>
+          <a href="restaurant.html">Εστιατόριο</a>
+          <a href="location.html">Τοποθεσία</a>
+          <a href="contact.html">Επικοινωνία</a>
+          <a class="btn btn-primary" data-booking-link href="#">Κράτηση</a>
+        </nav>
+
+        <div class="lang-switch" aria-label="Language switcher">
+          <a data-lang-en href="#">EN</a>
+          <span>|</span>
+          <a data-lang-gr href="#">GR</a>
+        </div>
+
+        <button class="mobile-nav-toggle" data-mobile-nav-toggle aria-expanded="false" aria-label="Άνοιγμα μενού">☰</button>
+      </div>
+      <div class="container mobile-menu" data-mobile-menu>
+        <a href="index.html">Αρχική</a>
+        <a href="rooms.html">Δωμάτια</a>
+        <a href="restaurant.html">Εστιατόριο</a>
+        <a href="location.html">Τοποθεσία</a>
+        <a href="contact.html">Επικοινωνία</a>
+        <a class="btn btn-primary" data-booking-link href="#">Κράτηση στο Booking.com</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container reveal">
+          <h1>Ιδανική τοποθεσία δίπλα στη θάλασσα</h1>
+          <p>Στον ήσυχο Περίβολο, λίγα λεπτά από τη διάσημη μαύρη παραλία της Σαντορίνης.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container split reveal">
+          <div>
+            <p>
+              Το Honeymoon Beach Studios βρίσκεται στον Περίβολο, στη νοτιοανατολική πλευρά της Σαντορίνης,
+              σε πολύ κοντινή απόσταση από την παραλία.
+            </p>
+            <p>
+              Η παραλία είναι γνωστή για τα καθαρά νερά, τη χαλαρή ατμόσφαιρα και τις επιλογές για φαγητό και διασκέδαση.
+            </p>
+            <a class="btn btn-secondary" href="contact.html">Οδηγίες πρόσβασης</a>
+          </div>
+          <img src="../assets/close-beach.png" alt="Τοποθεσία στον Περίβολο" />
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container reveal">
+          <h2 class="section-title">Βρείτε μας στον Περίβολο</h2>
+          <div class="map-wrap">
+            <iframe
+              title="Χάρτης για την παραλία Περίβολος"
+              loading="lazy"
+              src="https://www.google.com/maps?q=Perivolos%20Beach%20Santorini&output=embed"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <strong>Διεύθυνση</strong>
+          <p>Περίβολος, Σαντορίνη 84703, Ελλάδα</p>
+        </div>
+        <div>
+          <strong>Τηλέφωνο / Email</strong>
+          <p><a data-phone-link href="tel:+302286082796">+30 2286 082796</a></p>
+          <p><a href="mailto:h-beach@otenet.gr">h-beach@otenet.gr</a></p>
+        </div>
+        <div>
+          <strong>Κράτηση</strong>
+          <p><a data-booking-link href="#">Κράτηση στο Booking.com</a></p>
+        </div>
+      </div>
+      <div class="container"><small>Copyright © 2026 Honeymoon Beach Studios | Created by WebHostPro</small></div>
+    </footer>
+
+    <div class="mobile-sticky-cta">
+      <a class="btn btn-primary" data-booking-link href="#">Κράτηση</a>
+    </div>
+
+    <script src="../js/main.js"></script>
+  </body>
+</html>

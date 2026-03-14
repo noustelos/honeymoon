@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="el">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Λεπτομέρειες Δωματίου | Honeymoon Beach Studios</title>
+    <meta
+      name="description"
+      content="Λεπτομέρειες δωματίου, φωτογραφίες, παροχές και εποχιακές τιμές στο Honeymoon Beach Studios."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-shell">
+        <a class="brand" href="index.html"><span>Honeymoon Beach Studios</span></a>
+        <nav class="nav-links">
+          <a href="index.html">Αρχική</a>
+          <a href="rooms.html">Δωμάτια</a>
+          <a href="restaurant.html">Εστιατόριο</a>
+          <a href="location.html">Τοποθεσία</a>
+          <a href="contact.html">Επικοινωνία</a>
+          <a class="btn btn-primary" data-booking-link href="#">Κράτηση</a>
+        </nav>
+
+        <div class="lang-switch" aria-label="Language switcher">
+          <a data-lang-en href="#">EN</a>
+          <span>|</span>
+          <a data-lang-gr href="#">GR</a>
+        </div>
+
+        <button class="mobile-nav-toggle" data-mobile-nav-toggle aria-expanded="false" aria-label="Άνοιγμα μενού">☰</button>
+      </div>
+      <div class="container mobile-menu" data-mobile-menu>
+        <a href="index.html">Αρχική</a>
+        <a href="rooms.html">Δωμάτια</a>
+        <a href="restaurant.html">Εστιατόριο</a>
+        <a href="location.html">Τοποθεσία</a>
+        <a href="contact.html">Επικοινωνία</a>
+        <a class="btn btn-primary" data-booking-link href="#">Κράτηση στο Booking.com</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container reveal">
+          <h1 data-room-title>Μεζονέτα 2 Κλινών</h1>
+          <p data-room-summary>Ιδανική επιλογή για άνετη διαμονή κοντά στη θάλασσα.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container reveal">
+          <div class="slider" aria-label="Slider φωτογραφιών δωματίου">
+            <div data-room-slider>
+              <div class="slide active">
+                <img src="../assets/room_photos/2_bed_maisonette/5aee881f_original.jpg" alt="Φωτογραφία δωματίου 1" />
+              </div>
+            </div>
+            <div class="slider-controls">
+              <button type="button" data-slide-prev aria-label="Προηγούμενη φωτογραφία">‹</button>
+              <button type="button" data-slide-next aria-label="Επόμενη φωτογραφία">›</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container split reveal">
+          <div>
+            <h2 class="section-title">Περιγραφή Δωματίου</h2>
+            <p>
+              Το κατάλυμα συνδυάζει άνεση και πρακτικότητα σε οικογενειακό περιβάλλον. Απολαμβάνετε ήσυχη διαμονή
+              και άμεση πρόσβαση στην παραλία Περίβολος.
+            </p>
+            <p><strong>Κατηγορία:</strong> <span data-room-category>Μεζονέτα για 2 άτομα</span></p>
+            <p><strong>Ενδεικτική Τιμή:</strong> <span data-room-price>Από 70€ / βράδυ</span></p>
+            <a class="btn btn-primary" data-booking-link href="#">ΚΡΑΤΗΣΗ ΣΤΟ BOOKING.COM</a>
+          </div>
+          <div>
+            <h3>Παροχές</h3>
+            <ul class="amenities">
+              <li>Ιδιωτικό μπαλκόνι</li>
+              <li>Κουζινάκι</li>
+              <li>Κλιματισμός</li>
+              <li>Χρηματοκιβώτιο</li>
+              <li>Δωρεάν Wi-Fi</li>
+              <li>Καθημερινή καθαριότητα</li>
+              <li>Ιδιωτικό μπάνιο</li>
+              <li>Σεσουάρ</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container reveal">
+          <h2 class="section-title">Εποχιακός Τιμοκατάλογος</h2>
+          <div data-price-table></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <strong>Διεύθυνση</strong>
+          <p>Περίβολος, Σαντορίνη 84703, Ελλάδα</p>
+        </div>
+        <div>
+          <strong>Επικοινωνία</strong>
+          <p><a data-phone-link href="tel:+302286082796">+30 2286 082796</a></p>
+          <p><a href="mailto:h-beach@otenet.gr">h-beach@otenet.gr</a></p>
+        </div>
+        <div>
+          <strong>Κράτηση</strong>
+          <p><a data-booking-link href="#">Κράτηση στο Booking.com</a></p>
+        </div>
+      </div>
+      <div class="container"><small>Copyright © 2026 Honeymoon Beach Studios | Created by WebHostPro</small></div>
+    </footer>
+
+    <div class="mobile-sticky-cta">
+      <a class="btn btn-primary" data-booking-link href="#">Κράτηση</a>
+    </div>
+
+    <script src="../js/main.js"></script>
+  </body>
+</html>
